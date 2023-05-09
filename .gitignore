@@ -1,0 +1,4 @@
+*.pyc 
+*.db
+**/__pycache__/
+./prizepicks-estimator/prizepicks_scraper/env_variables.py
