@@ -2,11 +2,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.engine import URL
 from sqlalchemy.orm import sessionmaker
 from prizepicks_scraper import env_variables
-ENV = "LOCAL"
 
-if ENV == "LOCAL":
+if env_variables.ENV == "LOCAL":
     engine = create_engine("sqlite+pysqlite:///nba_stats.db")
 else:
+    # this will only work if you are on a pythonanywhere machine
     url_object = URL.create(
         "mysql+pymysql",
         username=env_variables.PROD_USER,
