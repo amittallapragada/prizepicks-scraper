@@ -1,5 +1,4 @@
-# NBA Bet Project
-
+# NBA PrizePicks Odds Scraper
 ## Run the PrizePicks Scraper
 
 1. upgrade chrome to version (113.0.5672.63) to use the existing selenium chrome driver or download another chromedriver that matches your chrome browser's versions.
